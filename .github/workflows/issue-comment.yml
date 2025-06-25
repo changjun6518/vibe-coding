@@ -1,0 +1,20 @@
+name: Issue Auto Comment
+
+on:
+  issues:
+    types: [opened]
+
+jobs:
+  comment:
+    runs-on: ubuntu-latest
+    steps:
+      - name: 이슈에 자동 코멘트 등록
+        uses: actions/github-script@v7
+        with:
+          script: |
+            github.rest.issues.createComment({
+              issue_number: context.payload.issue.number,
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              body: '이슈를 등록해주셔서 감사합니다!\n\n담당자가 곧 할당되며, 이슈 설명을 명확히 작성해 주세요.'
+            }) 
