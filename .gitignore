@@ -26,9 +26,6 @@ ENV/
 coverage/
 htmlcov/
 
-# Github Actions
-/.github/
-
 # 기타
 *.swp
 *.swo
