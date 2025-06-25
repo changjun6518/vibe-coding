@@ -1,0 +1,43 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.env
+*.venv
+venv/
+env/
+ENV/
+
+# VSCode
+.vscode/
+
+# macOS
+.DS_Store
+
+# 환경 변수 및 설정 파일
+.env
+.env.*
+*.env
+
+# 테스트, 로그
+*.log
+*.sqlite3
+coverage/
+htmlcov/
+
+# Github Actions
+/.github/
+
+# 기타
+*.swp
+*.swo
+.idea/
+
+# 프론트엔드
+node_modules/
+
+# 백엔드
+backend/__pycache__/
+backend/app/__pycache__/
+backend/tests/__pycache__/ 
